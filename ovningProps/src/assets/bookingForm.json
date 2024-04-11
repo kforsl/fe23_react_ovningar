@@ -1,0 +1,69 @@
+[
+    {
+        "type": "radio",
+        "id": "secondClass",
+        "labelClass": "booking__form-radio",
+        "inputClass": "booking__form-radio-btn",
+        "name": "ticketClass",
+        "value": "2:a klass",
+        "label": "2:a klass"
+    },
+    {
+        "type": "radio",
+        "id": "firstClass",
+        "labelClass": "booking__form-radio",
+        "inputClass": "booking__form-radio-btn",
+        "name": "ticketClass",
+        "value": "1:a klass",
+        "label": "1:a klass"
+    },
+    {
+        "type": "select",
+        "options": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "id": "tickets",
+        "labelClass": "booking__form-label",
+        "inputClass": "booking__form-input",
+        "label": "Antal biljetter"
+    },
+    {
+        "type": "select",
+        "options": [
+            "",
+            "Ms.",
+            "Mr.",
+            "Mx."
+        ],
+        "id": "title",
+        "labelClass": "booking__form-label",
+        "inputClass": "booking__form-input",
+        "label": "Titel"
+    },
+    {
+        "type": "text",
+        "id": "firstName",
+        "labelClass": "booking__form-label booking__form-label--large",
+        "inputClass": "booking__form-input",
+        "label": "Förnamn"
+    },
+    {
+        "type": "text",
+        "id": "lastName",
+        "labelClass": "booking__form-label booking__form-label--large",
+        "inputClass": "booking__form-input",
+        "label": "Efternamn"
+    },
+    {
+        "type": "checkbox",
+        "id": "terms",
+        "labelClass": "booking__form-radio",
+        "inputClass": "booking__form-radio-btn",
+        "label": "Godkänner vilkoren"
+    }
+]
