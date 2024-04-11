@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './products.css'
 import axios from 'axios'
-import ProductCard from '../productCard/ProductCard'
+import ProductCard from '../components/productCard/ProductCard'
 
 const getProducts = (setProducts) => {
     axios.get('https://santosnr6.github.io/Data/sinus_products.json')

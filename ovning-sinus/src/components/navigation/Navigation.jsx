@@ -11,8 +11,7 @@ export default function Navigation({ navItems, handleIsOpen }) {
                     navItems.map((navItem, index) => {
                         return (
                             <NavItem
-                                active={navItem.active}
-                                value={navItem.value}
+                                {...navItem}
                                 key={index}
                             />
                         )

@@ -1,22 +1,23 @@
 import React from 'react'
 import './navItem.css'
+import { Link } from 'react-router-dom'
 
-export default function NavItem({ active, value }) {
+export default function NavItem({ active, value, path }) {
     return (
         active ?
             <li className='navigation__list-item'>
-                <a
+                <Link to={path}
                     className='navigation__link 
                     navigation__link--active'
                 >
                     {value}
-                </a>
+                </Link>
             </li>
             :
             <li className='navigation__list-item'>
-                <a className='navigation__link'>
+                <Link to={path} className='navigation__link'>
                     {value}
-                </a>
+                </Link>
             </li>
 
     )

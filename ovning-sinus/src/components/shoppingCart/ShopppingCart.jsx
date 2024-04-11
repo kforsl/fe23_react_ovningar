@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './shoppingCart.css'
 import CartItem from '../cartItem/CartItem'
+import { Link } from 'react-router-dom'
 
-export default function ShopppingCart({ open, inCart }) {
-    const [totalPrice, setTotalPrice] = useState(0)
+export default function ShopppingCart({ open, setIsOpen, inCart, totalPrice }) {
 
-    useEffect(() => {
-        let price = 0
-        inCart.map(item => {
-            price += item.price
-        })
-        setTotalPrice(price)
-    }, [inCart])
     return (
         <dialog
             open={open}
@@ -38,7 +31,7 @@ export default function ShopppingCart({ open, inCart }) {
                 <h3 className='shopping-cart__total'> Total </h3>
                 <h4 className='shopping-cart__price'> {totalPrice} </h4>
             </section>
-            <button className='shopping-cart__btn'> Take My money! </button>
+            <Link to='/order' className='shopping-cart__btn' onClick={() => setIsOpen(false)}> Take My money! </Link>
 
         </dialog>
     )
