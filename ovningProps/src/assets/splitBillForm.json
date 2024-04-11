@@ -1,0 +1,24 @@
+[
+    {
+        "id": "sum",
+        "type": "number",
+        "inputClass": "split__form-input",
+        "labelClass": "split__form-label",
+        "label": "Summa"
+    },
+    {
+        "id": "friends",
+        "type": "number",
+        "inputClass": "split__form-input",
+        "labelClass": "split__form-label",
+        "label": "Antal Vänner"
+    },
+    {
+        "id": "tip",
+        "type": "number",
+        "inputClass": "split__form-input",
+        "labelClass": "split__form-label",
+        "label": "Dricks",
+        "step": "0.01"
+    }
+]
