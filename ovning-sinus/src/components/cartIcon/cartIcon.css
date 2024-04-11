@@ -1,0 +1,13 @@
+.cart {
+    list-style: none;
+}
+
+.cart-icon {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.cart-icon:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}

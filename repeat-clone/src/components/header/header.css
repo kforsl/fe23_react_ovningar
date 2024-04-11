@@ -1,0 +1,39 @@
+.header {
+    background-color: #F5FF7D;
+    padding: 1rem 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 2rem;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.header__list-item {
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+.header__list-item:hover {
+    text-decoration: underline;
+}
+
+.header__btn {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #37352F;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}

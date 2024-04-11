@@ -1,0 +1,19 @@
+.navigation__list-item {
+    list-style: none;
+}
+
+.navigation__link {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.navigation__link--active {
+    font-weight: 700;
+}
+
+.navigation__link:hover {
+    border-bottom: solid 1px rgba(0, 0, 0, .3);
+}

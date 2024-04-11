@@ -1,0 +1,46 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.brand-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.brand__card {
+    height: 120px;
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: scale-down cover;
+    border: 1px solid black;
+}
+
+.read-more {
+    max-width: 1000px;
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.favorit-brand {
+    max-width: 1000px;
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.activate {
+    max-width: 1000px;
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}

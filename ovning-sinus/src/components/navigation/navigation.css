@@ -1,0 +1,11 @@
+.navigation {
+    position: sticky;
+    top: 0;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
