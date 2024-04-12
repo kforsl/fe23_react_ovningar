@@ -1,0 +1,40 @@
+.form {
+    display: grid;
+    grid-template-areas:
+        'iOne iOne'
+        'iTwo iTwo'
+        'iThree iFour'
+    ;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.grid-one {
+    grid-area: iOne;
+}
+
+.grid-two {
+    grid-area: iTwo;
+}
+
+.grid-three {
+    grid-area: iThree;
+}
+
+.grid-four {
+    grid-area: iFour;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    padding: .5rem .7rem;
+}

@@ -4,7 +4,7 @@ import Navigation from '../navigation/Navigation'
 import ShopppingCart from '../shoppingCart/ShopppingCart'
 import { Link } from 'react-router-dom'
 
-export default function Header({ inCart, totalPrice }) {
+export default function Header({ inCart, totalPrice, add, remove }) {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -26,15 +26,17 @@ export default function Header({ inCart, totalPrice }) {
 
     return (
         <header className='header'>
-            <Link to='/'>
-                <img
-                    className='header__logo'
-                    src='../src/assets/sinus-logo-horisontal.svg'
-                    alt='Sinus skatebords logo'
-                />
-            </Link>
-            <Navigation navItems={navItems} handleIsOpen={handleIsOpen} />
-            <ShopppingCart open={isOpen} inCart={inCart} totalPrice={totalPrice} setIsOpen={setIsOpen} />
+            <section className='header__container'>
+                <Link to='/'>
+                    <img
+                        className='header__logo'
+                        src='../src/assets/sinus-logo-horisontal.svg'
+                        alt='Sinus skatebords logo'
+                    />
+                </Link>
+                <Navigation navItems={navItems} handleIsOpen={handleIsOpen} />
+                <ShopppingCart open={isOpen} inCart={inCart} totalPrice={totalPrice} setIsOpen={setIsOpen} add={add} remove={remove} />
+            </section>
         </header>
     )
 }

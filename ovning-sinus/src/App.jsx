@@ -8,6 +8,7 @@ import Order from './Pages/Order'
 import Account from './Pages/Account'
 import Home from './Pages/Home'
 
+
 function App() {
 
     const [inCart, setInCart] = useState([])
@@ -34,7 +35,7 @@ function App() {
                 cdnUrl: item.cdnUrl,
                 imgFile: item.imgFile,
                 longDesc: item.longDesc,
-                price: item.price * nmbrInCart,
+                price: item.price,
                 serial: item.serial,
                 shortDesc: item.shortDesc,
                 specialEdition: item.specialEdition,
@@ -43,22 +44,48 @@ function App() {
             }
             newInCart.splice(index, 1, newCartItem)
         } else {
-            newInCart.unshift(product)
+            const newCartItem = {
+                category: product.category,
+                cdnUrl: product.cdnUrl,
+                imgFile: product.imgFile,
+                longDesc: product.longDesc,
+                price: product.price,
+                serial: product.serial,
+                shortDesc: product.shortDesc,
+                specialEdition: product.specialEdition,
+                title: product.title,
+                inCart: 1
+            }
+            newInCart.unshift(newCartItem)
         }
-
         setInCart(newInCart)
-
     }
+
+
     return (
         <div className="app">
             <Header inCart={inCart} totalPrice={totalPrice} />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/products' element={<Products handleInCart={handleInCart} />} />
-                <Route path='/order' element={<Order inCart={inCart} totalPrice={totalPrice} />} />
-                <Route path='/account' element={<Account />} />
+                <Route path='/'
+                    element={<Home />}
+                />
+                <Route path='/products'
+                    element={
+                        <Products handleInCart={handleInCart} />}
+                />
+                <Route path='/order'
+                    element={<Order
+                        inCart={inCart}
+                        totalPrice={totalPrice}
+                    />}
+                />
+                <Route path='/account'
+                    element={<Account />}
+                />
             </Routes>
             <Footer />
+
+
         </div>
     )
 }

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import './shoppingCart.css'
 import CartItem from '../cartItem/CartItem'
 import { Link } from 'react-router-dom'

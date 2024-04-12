@@ -15,7 +15,9 @@ export default function CartItem({ item }) {
                     <h4> {item.shortDesc} </h4>
                     <p> {item.serial} </p>
                 </div>
-                <h3> {item.price} </h3>
+
+                <h3 className='shopping-cart__item-price'> {item.inCart ? item.price * item.inCart : item.price} </h3>
+
             </section>
         </article>
     )

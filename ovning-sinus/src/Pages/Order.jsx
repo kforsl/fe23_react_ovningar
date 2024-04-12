@@ -1,5 +1,6 @@
 import React from 'react'
 import CartItem from '../components/cartItem/CartItem'
+import Form from '../components/form/Form'
 
 export default function Order({ inCart, totalPrice }) {
     return (
@@ -24,9 +25,21 @@ export default function Order({ inCart, totalPrice }) {
                 </article>
                 <article className='order__form-container'>
                     <h3 className='order__sub-title'>Delivery</h3>
+                    <Form
+                        labelOne={'Name'}
+                        labelTwo={'Street address'}
+                        labelThree={'City'}
+                        labelFour={'Zip Code'}
+                    />
                 </article>
                 <article className='order__form-container'>
                     <h3 className='order__sub-title'>Payment Details </h3>
+                    <Form
+                        labelOne={'Card owner'}
+                        labelTwo={'Card Number'}
+                        labelThree={'Valid until'}
+                        labelFour={'CCV'}
+                    />
                 </article>
             </section>
             <button className='order__btn'> Take My money! </button>
